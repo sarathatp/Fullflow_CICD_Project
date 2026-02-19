@@ -1,0 +1,29 @@
+# --- 1. Maven Build Artifacts ---
+# We don't commit the 'target' folder because it contains compiled code and reports.
+# Jenkins/CI-CD will build its own target folder.
+target/
+*.jar
+*.war
+
+# --- 2. Eclipse Specific Files ---
+# These contain paths unique to your computer (C:/Users/sarat/...)
+# If you commit these, your project might not open on a teammate's computer.
+.metadata/
+.settings/
+.project
+.classpath
+.factorypath
+
+# --- 3. Java Compiled Files ---
+# We only want to save .java (source), not .class (compiled)
+*.class
+
+# --- 4. Logs and Temporary Files ---
+# Selenium and Cucumber often generate logs.
+*.log
+test-output/
+bin/
+
+# --- 5. OS Generated Files ---
+.DS_Store
+Thumbs.db

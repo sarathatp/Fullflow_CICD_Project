@@ -18,6 +18,7 @@ public class GoogleSteps {
 		driver = new ChromeDriver();		
 		driver.get("https://www.google.com");
 		
+		System.out.println("openGoogle method Running in Jenkins");
 	}
 	
 	

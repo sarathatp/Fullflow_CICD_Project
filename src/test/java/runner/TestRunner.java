@@ -7,14 +7,11 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(
+@CucumberOptions(		
 		
-		features = "src/test/resources/google.feature",
-		
-		glue = "steps",
-		
-		plugin = {"pretty"}
-		
+		features = "src/test/resources/google.feature",		
+		glue = "steps",		
+		plugin = {"pretty"}		
 		
 		)
 public class TestRunner {

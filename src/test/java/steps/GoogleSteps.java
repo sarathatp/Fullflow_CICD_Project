@@ -29,7 +29,7 @@ public class GoogleSteps {
 		Assert.assertTrue(driver.getTitle().contains(expected));
 		
 		System.out.println(driver.getTitle());
-		System.out.println("Test closed");
+		System.out.println("Test closed by Ms. V");
 		driver.quit();
 		
 	}
